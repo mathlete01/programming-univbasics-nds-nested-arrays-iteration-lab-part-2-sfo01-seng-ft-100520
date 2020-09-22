@@ -10,6 +10,8 @@ def find_min_in_nested_arrays(src)
       if src[counterB] > newArray[counterB]
         newArray[counterB] = src[counterB]
       end
+      counterB += 1
     end
+    counterA += 1
   end
 end
