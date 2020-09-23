@@ -3,12 +3,13 @@ def find_min_in_nested_arrays(src)
   # Produce a new Array that contains the smallest number of each of the nested arrays
     #puts "src.length = #{src.length}"
   counterA = 0
-  newArr = []
+  arrayA = []
   while counterA < src.length do
     puts "counterA = #{counterA}"
     #puts "src[counterA] = #{src[counterA]}"
     counterB = 0
-    newArr[counterA][counterB] = 0
+    arrayA[counterA] = new Array
+    arrayA[counterA][counterB] = 0
     while counterB < src[counterA].length do
       #puts "src[counterA].length = #{src[counterA].length}"
       if src[counterA][counterB] > newArr[counterA][counterB]
