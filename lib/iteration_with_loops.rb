@@ -18,7 +18,7 @@ def find_min_in_nested_arrays(src)
     end
     counterA += 1
   end
-  puts "newArr = #{newArr}
+  puts "newArr = #{newArr}"
 end
 
 array_of_daily_temperatures = [
