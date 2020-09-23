@@ -6,15 +6,19 @@ def find_min_in_nested_arrays(src)
   newArr = []
   while counterA < src.length do
     puts "counterA = #{counterA}"
-    puts "src[counterA] = #{src[counterA]}"
+    #puts "src[counterA] = #{src[counterA]}"
     newArr[counterA] = 0
     counterB = 0
-    if src[counterA][counterB] > newArr[counterA]
-      puts "src[counterA][counterB] = #{src[counterA][counterB]}"
-      newArr[counterA] = src[counterA][counterB]
+    while counterB < src[counterA].length do
+      if src[counterA][counterB] > newArr[counterA]
+        puts "src[counterA][counterB] = #{src[counterA][counterB]}"
+        newArr[counterA] = src[counterA][counterB]
+      end
+      counterB += 1
     end
     counterA += 1
   end
+  puts "newArr = #{newArr}
 end
 
 array_of_daily_temperatures = [
