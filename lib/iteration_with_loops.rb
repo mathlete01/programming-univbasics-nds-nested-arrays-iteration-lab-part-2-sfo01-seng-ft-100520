@@ -5,16 +5,16 @@ def find_min_in_nested_arrays(src)
   counterA = 0
   arrayA = []
   while counterA < src.length do
-    puts "counterA = #{counterA}"
+    #puts "counterA = #{counterA}"
     #puts "src[counterA] = #{src[counterA]}"
     counterB = 0
     arrayA[counterA] = new Array
-    arrayA[counterA][counterB] = 0
+    #arrayA[counterA][counterB] = 0
     while counterB < src[counterA].length do
       #puts "src[counterA].length = #{src[counterA].length}"
       if src[counterA][counterB] > newArr[counterA][counterB]
         puts "src[counterA][counterB] = #{src[counterA][counterB]}"
-        newArr[counterA] = src[counterA][counterB]
+        #newArr[counterA] = src[counterA][counterB]
       end
       counterB += 1
     end
